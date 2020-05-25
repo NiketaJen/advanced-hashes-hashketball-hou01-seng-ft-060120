@@ -213,6 +213,7 @@ end
 end
 
 require 'pry'
+#Shortened method for use
 def players
    game_hash.each do |location, team_data|
      team_data[:players]
@@ -224,7 +225,7 @@ end
 #   into steps:
 
 def big_shoe_rebounds
-  players
+  players[:shoe].max
   binding.pry
 end
 

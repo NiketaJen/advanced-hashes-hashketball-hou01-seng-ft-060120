@@ -216,8 +216,8 @@ require 'pry'
 def players
    game_hash.each do |location, team_data|
      team_data[:players]
-     binding.pry
 end
+binding.pry
 end
 
 # * Build a method, `big_shoe_rebounds`, that will return the number of rebounds

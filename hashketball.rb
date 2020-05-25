@@ -225,7 +225,7 @@ end
 #   into steps:
 
 def big_shoe_rebounds
-  players[:shoe]
+  players[:player_name]
   binding.pry
 end
 

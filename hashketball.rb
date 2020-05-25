@@ -229,7 +229,9 @@ def big_shoe_rebounds
      rebounds= team_data[:players].max_by {|key| key[:shoe]}[:rebounds]
        
  binding.pry
+ rebounds
 end
+
 end 
 
 

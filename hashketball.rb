@@ -225,11 +225,8 @@ end
 #   into steps:
 
 def big_shoe_rebounds
-game_hash.values.map do |team_data|
-  team_data[:players]
-end.values.map do |stats|
-  stats[:shoe]
-end.max
+ game_hash.each do |location, team_data|
+     team_data[:players]
   binding.pry
 end
 

@@ -214,7 +214,6 @@ end
 
 require 'pry'
 def players
-  binding.pry
    game_hash.each do |location, team_data|
      team_data[:players]
 end
@@ -224,9 +223,10 @@ end
 #   associated with the player that has the largest shoe size. Break this one down
 #   into steps:
 
-# def big_shoe_rebounds
-  
-# end
+def big_shoe_rebounds
+  players
+  binding.pry
+end
 
 #   * First, find the player with the largest shoe size
 #   * Then, return that player's number of rebounds

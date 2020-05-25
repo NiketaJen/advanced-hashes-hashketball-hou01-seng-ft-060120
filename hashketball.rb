@@ -200,7 +200,7 @@ end
 # * Build a method, `player_stats`, that takes in an argument of a player's name
 #   and returns a hash of that player's stats
 
-require 'pry'
+
 def player_stats(player_name)
   game_hash.each do |location, team_data|
     team_data[:players].each do |stats|
@@ -212,9 +212,11 @@ end
 end
 end
 
+require 'pry'
 def players
    game_hash.each do |location, team_data|
      team_data[:players]
+     binding.pry
 end
 
 # * Build a method, `big_shoe_rebounds`, that will return the number of rebounds

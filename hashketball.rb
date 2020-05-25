@@ -225,7 +225,7 @@ end
 #   into steps:
 
 def big_shoe_rebounds
-  players[:shoe].max
+  players[:shoe]
   binding.pry
 end
 

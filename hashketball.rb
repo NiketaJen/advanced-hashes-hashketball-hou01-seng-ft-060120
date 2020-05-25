@@ -179,8 +179,6 @@ end
     [game_hash[:home][:team_name], game_hash[:away][:team_name]]
 end
 
-# * Build a method, `player_numbers`, that takes in an argument of a team name and
-#   returns an `Array` of the jersey numbers for that team.
 
 
  def player_numbers(team_name)
@@ -197,9 +195,6 @@ end
  end
 
 
-# * Build a method, `player_stats`, that takes in an argument of a player's name
-#   and returns a hash of that player's stats
-
 
 def player_stats(player_name)
   game_hash.each do |location, team_data|
@@ -212,33 +207,15 @@ end
 end
 end
 
-require 'pry'
-#Shortened method for use
-def players
-   game_hash.each do |location, team_data|
-     team_data[:players]
-end
-end
 
-# * Build a method, `big_shoe_rebounds`, that will return the number of rebounds
-#   associated with the player that has the largest shoe size. Break this one down
-#   into steps:
 
 def big_shoe_rebounds
  game_hash.each do |location, team_data|
   rebounds = team_data[:players].max_by {|key| key[:shoe]}[:rebounds]
        
-# binding.pry
  return rebounds
 end
-
 end 
 
 
-
-
-
-#   * First, find the player with the largest shoe size
-#   * Then, return that player's number of rebounds
-#   * Remember to think about return values here.
 

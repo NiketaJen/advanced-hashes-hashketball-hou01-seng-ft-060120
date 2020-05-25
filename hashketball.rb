@@ -218,6 +218,7 @@ def players
      team_data[:players]
      binding.pry
 end
+end
 
 # * Build a method, `big_shoe_rebounds`, that will return the number of rebounds
 #   associated with the player that has the largest shoe size. Break this one down

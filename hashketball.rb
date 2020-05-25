@@ -225,7 +225,11 @@ end
 #   into steps:
 
 def big_shoe_rebounds
-game_hash[:home][:players].max_by { |_name, stats| stats[:shoe] }.last[:shoe]
+game_hash.values.map do |team_data|
+  team_data[:players]
+end.values.map do |stats|
+  stats[:shoe]
+end.max
   binding.pry
 end
 end

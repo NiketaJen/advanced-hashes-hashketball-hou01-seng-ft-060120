@@ -142,8 +142,6 @@ def num_points_scored(player_name)
 end
  end
 
-# * Build a method, `shoe_size`, that takes in an argument of a player's name and
-#   returns the shoe size for that player. 
 
 def shoe_size(player_name)
   game_hash.each do |location, team_data|
@@ -158,8 +156,6 @@ def shoe_size(player_name)
 end
 end
  
-# * Build a method, `team_colors`, that takes in an argument of the team name and
-#   returns an `Array` of that team's colors.
 
 def team_colors(team_name)
   game_hash.each do |location, team_data|
@@ -172,8 +168,6 @@ def team_colors(team_name)
 end
 end
 
-# * Build a method, `team_names`, that operates on the game `Hash` to return an
-#   `Array` of the team names. 
 
  def team_names
     [game_hash[:home][:team_name], game_hash[:away][:team_name]]
